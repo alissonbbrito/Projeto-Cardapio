@@ -32,9 +32,9 @@ closeModalBtn.addEventListener("click", function(){
 
 menu.addEventListener("click", function(event){
    // console.log(event.target) - PARA PEGAR O TARGET DE QUALQUER ITEM
-   let parentButton = event.target.closest(".add-to-cart-btn")
-   
-   if(parentButton){
+let parentButton = event.target.closest(".add-to-cart-btn")
+
+if(parentButton){
     const name = parentButton.getAttribute("data-name")
     const price = parseFloat(parentButton.getAttribute("data-price"))
 
@@ -44,7 +44,7 @@ menu.addEventListener("click", function(event){
 
 
 
-   }
+    }
 })
 
 // função p adicionar no carrrinho
